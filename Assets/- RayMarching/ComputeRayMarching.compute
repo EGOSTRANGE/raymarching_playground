@@ -1,0 +1,29 @@
+﻿#pragma kernel CSMain
+
+RWTexture2D<float4> Result;
+
+float4 _DirectionalLight;
+float _Width;
+float _Height;
+float _Stuff;
+
+//skybox
+Texture2D<float4> _SkyboxTexture;
+SamplerState sampler_SkyboxTexture;
+
+
+#include "RayCameraStructs.cginc"
+#include "RayMarching.cginc"
+
+[numthreads(32,32,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{   _Stuff+=0.001f;
+    _Pixel = id.xy;
+    
+    uint width, height;
+    Result.GetDimensions(width, height);
+    float2 uv = float2(id.xy / float2(1600, 900) * 2.0f - 1.0f);
+    Ray ray = CreateCameraRay(uv);
+    
+    Result[id.xy] = float4(TravelScene(ray),1);
+}

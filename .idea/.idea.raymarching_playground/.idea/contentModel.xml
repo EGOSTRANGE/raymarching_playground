@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\- projects\- unity\raymarching_playground" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="- RayMarching" t="Include">
+          <e p="ComputeRayMarching.compute" t="Include" />
+          <e p="Random.cginc" t="Include" />
+          <e p="RayCameraStructs.cginc" t="Include" />
+          <e p="Raymarching" t="Include">
+            <e p="RayMarcher.cs" t="Include" />
+            <e p="RaymarchingEntity.cs" t="Include" />
+            <e p="RaymarchingEntityManager.cs" t="Include" />
+          </e>
+          <e p="RayMarching.cginc" t="Include" />
+          <e p="RayMarchingEntity.cginc" t="Include" />
+          <e p="SDF.cginc" t="Include" />
+          <e p="Shade.cginc" t="Include" />
+          <e p="Shade2.cginc" t="Include" />
+          <e p="VectorCalc.cginc" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="raymarching_playground.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Pe\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Pe\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_raymarching_playground.1144715756.00" t="ExcludeRecursive" />
+  </component>
+</project>
