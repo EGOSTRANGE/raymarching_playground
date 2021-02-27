@@ -8,6 +8,8 @@ struct RayMarchingEntity
     half3 albedo;
     half roughness;
     float4 settings;
+    float3 bboxScale;
+    float3 bboxOffset;
 };
 
 StructuredBuffer<RayMarchingEntity> _RMEntities;

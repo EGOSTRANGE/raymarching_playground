@@ -49,7 +49,13 @@ namespace Raymarching.RaymarchingEntities
             // (float)
             //TODO: thing to look for: if this can be made into a half value (if that structure can be maintained into c#)
             RayMarchingEntityStride += sizeof(float);
+            
+            //bbox scale
+            RayMarchingEntityStride += sizeof(float)*3;
 
+            //bbox offset
+            RayMarchingEntityStride += sizeof(float)*3;
+            
             _entities = new RayMarchingEntity[MaxEntityAmount];
             _entitiesData = new RayMarchingEntity.RayMarchingEntityData[MaxEntityAmount];
             //_entityBuffer = new ComputeBuffer(MaxEntityAmount, RayMarchingEntityStride);

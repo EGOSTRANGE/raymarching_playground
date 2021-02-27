@@ -46,6 +46,8 @@ namespace Raymarching.RaymarchingEntities
             [Range(0, 1)] public float roughness;
 
             public float4 settings;
+            public float3 bBoxScale;
+            public float3 bBoxoffset;
         };
 
 
